@@ -1,0 +1,7 @@
+# Catatan UTS Pemrograman Web - Portofolio Pribadi Andrian
+
+File utama proyek ini adalah:
+1. `index.html` : Struktur dokumen semantik HTML5
+2. `css/style.css` : Desain tampilan modern, responsif, dark mode & animasi
+3. `js/script.js` : Logika interaktif Vanilla JavaScript (tanpa framework/Laravel)
+4. `assets/images/` : Asset grafis vektor SVG untuk avatar & mockup proyek

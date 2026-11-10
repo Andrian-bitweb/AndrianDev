@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#p4Grad)" />
+
+  <!-- Code editor / IDE Window Mockup -->
+  <rect x="30" y="30" width="540" height="320" rx="12" fill="#0b1329" stroke="#1e293b" stroke-width="2" />
+  
+  <!-- Editor Title Bar -->
+  <rect x="30" y="30" width="540" height="36" rx="12" fill="#0f172a" />
+  <circle cx="55" cy="48" r="6" fill="#ef4444" />
+  <circle cx="75" cy="48" r="6" fill="#f59e0b" />
+  <circle cx="95" cy="48" r="6" fill="#10b981" />
+  <rect x="130" y="38" width="140" height="20" rx="4" fill="#1e293b" />
+  <text x="145" y="52" fill="#38bdf8" font-family="monospace" font-size="11">uts_proyek.js</text>
+
+  <!-- Left Sidebar (Folder tree) -->
+  <rect x="30" y="66" width="130" height="284" fill="#0a0f1d" />
+  <text x="45" y="90" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="bold">EXPLORER</text>
+  <text x="45" y="115" fill="#38bdf8" font-family="monospace" font-size="10">📁 src</text>
+  <text x="60" y="135" fill="#cbd5e1" font-family="monospace" font-size="10">📄 index.html</text>
+  <text x="60" y="155" fill="#cbd5e1" font-family="monospace" font-size="10">📄 style.css</text>
+  <text x="60" y="175" fill="#fbbf24" font-family="monospace" font-size="10">📄 script.js</text>
+  <text x="45" y="200" fill="#94a3b8" font-family="monospace" font-size="10">📁 assets</text>
+
+  <!-- Editor Code View -->
+  <text x="180" y="100" fill="#64748b" font-family="monospace" font-size="11">1  // Sistem Penilaian Otomatis UTS</text>
+  <text x="180" y="125" fill="#f43f5e" font-family="monospace" font-size="12">const <tspan fill="#38bdf8">tugasUTS</tspan> = {</text>
+  <text x="200" y="150" fill="#94a3b8" font-family="monospace" font-size="12">mahasiswa: <tspan fill="#a7f3d0">"Andrian"</tspan>,</text>
+  <text x="200" y="175" fill="#94a3b8" font-family="monospace" font-size="12">mataKuliah: <tspan fill="#a7f3d0">"Pemrograman Web"</tspan>,</text>
+  <text x="200" y="200" fill="#94a3b8" font-family="monospace" font-size="12">status: <tspan fill="#a7f3d0">"Selesai &amp; Siap Diuji"</tspan>,</text>
+  <text x="200" y="225" fill="#94a3b8" font-family="monospace" font-size="12">targetNilai: <tspan fill="#fbbf24">"A (100 / 100)"</tspan></text>
+  <text x="180" y="250" fill="#f43f5e" font-family="monospace" font-size="12">};</text>
+  <text x="180" y="280" fill="#10b981" font-family="monospace" font-size="12">console.log(<tspan fill="#a7f3d0">"Portofolio Berhasil Dijalankan! 🚀"</tspan>);</text>
+
+  <!-- Floating Success Badge -->
+  <rect x="360" y="270" width="190" height="45" rx="8" fill="url(#glowGrad)" />
+  <text x="375" y="298" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">✓ Build Succeeded 100%</text>
+</svg>

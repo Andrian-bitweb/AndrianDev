@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portofolio Pribadi | Andrian - Tugas UTS Multimedia</title>
+  
+  <!-- Meta Deskripsi & Author untuk SEO & Nilai Akademik -->
+  <meta name="description" content="Portofolio Pribadi Andrian - Tugas Ujian Tengah Semester (UTS) Mata Kuliah Multimedia. Dibuat murni dengan HTML5, CSS3, dan JavaScript di VS Code.">
+  <meta name="author" content="Andrian">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- File Stylesheet CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       BAGIAN 1: HEADER & NAVIGASI
+       ========================================================================= -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Logo Personal -->
+      <a href="#beranda" class="logo">
+        <span class="logo-badge">&lt;/&gt;</span>
+        <span>Andrian</span>.dev
+      </a>
+
+      <!-- Menu Navigasi Desktop & Mobile -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#tentang" class="nav-link">Tentang Saya</a>
+        <a href="#keahlian" class="nav-link">Keahlian</a>
+        <a href="#pengalaman" class="nav-link">Pengalaman</a>
+        <a href="#proyek" class="nav-link">Proyek</a>
+        <a href="#pendidikan" class="nav-link">Pendidikan</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+
+      <!-- Aksi Navigasi (Tombol Tema & Hamburger) -->
+      <div class="nav-actions">
+        <!-- Tombol Ganti Tema (Dark / Light Mode) -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Ganti Tema Tampilan" title="Ganti Mode Gelap/Terang">
+          <span class="theme-icon">🌙</span>
+        </button>
+
+        <!-- Tombol Menu Mobile (Hamburger) -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Buka Menu Navigasi">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       BAGIAN 2: HERO / BERANDA
+       ========================================================================= -->
+  <section class="hero" id="beranda">
+    <div class="container hero-wrapper">
+      
+      <!-- Kolom Teks Hero -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>👋</span> Halo, Selamat Datang di Portofolio Saya!
+        </div>
+        <h1 class="hero-title">
+          Halo, Saya <span class="highlight-text">Andrian</span>
+        </h1>
+        <div class="hero-subtitle">
+          <span id="typing-role">Mahasiswa Teknik Informatika</span>
+          <span class="typing-cursor"></span>
+        </div>
+        <p class="hero-desc">
+          Saya seorang mahasiswa yang berdedikasi dan antusias dalam dunia rekayasa perangkat lunak serta pengembangan web modern. Berfokus pada perancangan antarmuka yang bersih, responsif, dan performa kode yang optimal.
+        </p>
+
+        <!-- Tombol Aksi (CTA) -->
+        <div class="hero-cta">
+          <a href="#proyek" class="btn btn-primary">
+            <span>🚀</span> Lihat Portofolio Proyek
+          </a>
+          <a href="#kontak" class="btn btn-outline">
+            <span>💬</span> Hubungi Saya
+          </a>
+          <button class="btn btn-outline" id="btn-download-cv">
+            <span>📄</span> Cetak / Simpan CV
+          </button>
+        </div>
+
+        <!-- Sosial Media & Profil Links -->
+        <div class="hero-socials">
+          <span class="social-label">Terhubung:</span>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" class="social-icon" title="GitHub Profil" rel="noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn Profil" rel="noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="mailto:andrian@example.com" class="social-icon" title="Kirim Email Langsung">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Foto / Visual Avatar Profil -->
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <!-- Gambar Profil Utama (Bisa diganti dengan foto pribadi foto-profil.jpg) -->
+          <img src="assets/images/profil.jpeg" alt="Foto Profil Andrian" class="hero-avatar">
+        </div>
+
+        <!-- Floating Badge Teknologi di Sekitar Avatar -->
+        <div class="floating-chip chip-1">
+          <span>⚡</span> HTML5 &amp; CSS3
+        </div>
+        <div class="floating-chip chip-2">
+          <span>💻</span> VS Code Ready
+        </div>
+        <div class="floating-chip chip-3">
+          <span>🎯</span> Redesign
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BAGIAN 3: TENTANG SAYA & DATA DIRI LENGKAP
+       ========================================================================= -->
+  <section class="about" id="tentang">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-badge">Profil Mahasiswa</span>
+        <h2 class="section-title">Data Diri &amp; <span class="highlight-text">Tentang Saya</span></h2>
+        <p class="section-subtitle">
+          Informasi ringkas mengenai biodata akademik, latar belakang, dan komitmen belajar saya di perkuliahan.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Narasi Profil & Nilai Tambah -->
+        <div class="about-narrative">
+          <h3>Membangun Masa Depan Melalui Teknologi &amp; Baris Kode</h3>
+          <p>
+            Halo! Saya <strong>Andrian</strong>, seorang mahasiswa yang sedang menempuh pendidikan pada jurusan Teknik Informatika. Sejak awal perkuliahan, saya memiliki ketertarikan tinggi terhadap bagaimana sebuah baris kode dapat diubah menjadi antarmuka visual yang interaktif dan memecahkan permasalahan nyata di masyarakat.
+          </p>
+          <p>
+            Halaman web portofolio ini saya bangun secara mandiri menggunakan teknologi murni <strong>HTML5, CSS3, dan Vanilla JavaScript</strong> tanpa bergantung pada framework Laravel. Kode ditulis secara terstruktur, bersih, dan sesuai standar semantik web menggunakan editor <strong>Visual Studio Code (VS Code)</strong> sebagai pemenuhan <strong>Tugas Ujian Tengah Semester (UTS)</strong>.
+          </p>
+          <p>
+            Saya selalu bersemangat mempelajari hal-hal baru, mulai dari konsep UI/UX, responsive layouting, hingga logika algoritma pemrograman web modern.
+          </p>
+
+          <!-- Statistik Belajar / Highlights -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Semester 5 (Lima)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">12+</div>
+              <div class="stat-label">Tugas &amp; Proyek Selesai</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">4.00</div>
+              <div class="stat-label">Target / IPK Kumulatif</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kartu Biodata Data Diri -->
+        <div class="biodata-card">
+          <div class="biodata-card-header">
+            <span style="font-size: 1.5rem;">📋</span>
+            <h4>Biodata Lengkap Mahasiswa</h4>
+          </div>
+
+          <div class="biodata-list">
+            <!-- Item Nama -->
+            <div class="biodata-item">
+              <span class="biodata-label">Nama Lengkap</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value"><strong>Syahrul Andrian Setia Budi</strong></span>
+            </div>
+
+            <!-- Item NIM (Bisa diedit oleh mahasiswa sesuai NIM aslinya) -->
+            <div class="biodata-item">
+              <span class="biodata-label">Nomor Induk (NPM)</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value">1412240085</span>
+            </div>
+
+            <!-- Item Program Studi / Jurusan -->
+            <div class="biodata-item">
+              <span class="biodata-label">Program Studi</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value">S1 - Teknik Informatika</span>
+            </div>
+
+            <!-- Item Fakultas -->
+            <div class="biodata-item">
+              <span class="biodata-label">Fakultas</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value">Fakultas Teknik</span>
+            </div>
+
+            <!-- Item Universitas / Kampus -->
+            <div class="biodata-item">
+              <span class="biodata-label">Perguruan Tinggi</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value">Universitas PGRI Ronggolawe Tuban</span>
+            </div>
+
+            <!-- Item Semester -->
+            <div class="biodata-item">
+              <span class="biodata-label">Semester Saat Ini</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value">Semester 5 (Lima) / Reguler</span>
+            </div>
+
+            <!-- Item Mata Kuliah UTS -->
+            <div class="biodata-item">
+              <span class="biodata-label">Mata Kuliah UTS</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value">Multimedia</span>
+            </div>
+
+            <!-- Nama Dosen Pengampu Mata Kliah -->
+            <div class="biodata-item">
+              <span class="biodata-label">Dosen Pengampu Mata Kuliah</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value">Suprapto S.Kom, M.Kom,.</span>
+            </div>
+
+            <!-- Item Minat Bidang -->
+            <div class="biodata-item">
+              <span class="biodata-label">Minat Keahlian</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value">Web Development &amp; UI/UX Design</span>
+            </div>
+
+            <!-- Item Domisili -->
+            <div class="biodata-item">
+              <span class="biodata-label">Domisili</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value"> Ds.Jenu, Kab.Tuban, Indonesia</span>
+            </div>
+
+            <!-- Item Status Mahasiswa -->
+            <div class="biodata-item">
+              <span class="biodata-label">Status Akademik</span>
+              <span class="biodata-separator">:</span>
+              <span class="biodata-value badge-status">Aktif Kuliah</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BAGIAN 4: KEAHLIAN (SKILLS)
+       ========================================================================= -->
+  <section class="skills" id="keahlian">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-badge">Kompetensi</span>
+        <h2 class="section-title"><span class="highlight-text">Keahlian</span></h2>
+        <p class="section-subtitle">
+          Ringkasan keahlian dan kompetensi yang saya miliki dalam pengembangan web serta teknologi informasi.
+        </p>
+      </div>
+
+      <!-- Tampilan Keahlian Sederhana Berbasis Paragraf -->
+      <div class="skills-simple-container">
+        
+        <!-- Bidang 1: Pemrograman Web (Frontend) -->
+        <div class="skill-simple-card">
+          <div class="skill-simple-header">
+            <div class="skill-icon-circle">🌐</div>
+            <h3>Pengembangan Web (Frontend)</h3>
+          </div>
+          <p class="skill-simple-desc">
+            Memiliki pemahaman dalam merancang dan membangun antarmuka website menggunakan HTML5 semantik, CSS3 untuk tata letak yang rapi dan responsif di berbagai perangkat (smartphone, tablet, maupun laptop), serta JavaScript untuk menambahkan fungsionalitas dan interaksi pengguna yang dinamis.
+          </p>
+          <div class="skill-tags-group">
+            <span class="skill-tag">HTML5 Semantik</span>
+            <span class="skill-tag">CSS3 (Flexbox &amp; Grid)</span>
+            <span class="skill-tag">JavaScript (DOM &amp; ES6)</span>
+            <span class="skill-tag">Desain Responsif</span>
+          </div>
+        </div>
+
+        <!-- Bidang 2: Basis Data & Logika Sistem -->
+        <div class="skill-simple-card">
+          <div class="skill-simple-header">
+            <div class="skill-icon-circle">🗄️</div>
+            <h3>Basis Data &amp; Logika Sistem</h3>
+          </div>
+          <p class="skill-simple-desc">
+            Memahami konsep dasar perancangan database relasional menggunakan MySQL, mulai dari pembuatan tabel, relasi data, hingga penulisan query dasar (CRUD: Create, Read, Update, Delete) serta dasar logika algoritma dan pemrograman web.
+          </p>
+          <div class="skill-tags-group">
+            <span class="skill-tag">MySQL Database</span>
+            <span class="skill-tag">Query SQL (CRUD)</span>
+            <span class="skill-tag">PHP Dasar</span>
+            <span class="skill-tag">Logika Algoritma</span>
+          </div>
+        </div>
+
+        <!-- Bidang 3: Tools & Lingkungan Kerja -->
+        <div class="skill-simple-card">
+          <div class="skill-simple-header">
+            <div class="skill-icon-circle">🛠️</div>
+            <h3>Perangkat &amp; Tools Kerja</h3>
+          </div>
+          <p class="skill-simple-desc">
+            Terbiasa menggunakan Visual Studio Code (VS Code) sebagai perangkat kerja utama dalam menulis kode program, Git &amp; GitHub untuk pengelolaan versi kode, serta Figma untuk membuat sketsa wireframe dan prototipe desain antarmuka pengguna.
+          </p>
+          <div class="skill-tags-group">
+            <span class="skill-tag">Visual Studio Code</span>
+            <span class="skill-tag">Git &amp; GitHub</span>
+            <span class="skill-tag">Figma UI/UX</span>
+            <span class="skill-tag">Web DevTools</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BAGIAN 5: PENGALAMAN (EXPERIENCE TIMELINE)
+       ========================================================================= -->
+  <section class="experience" id="pengalaman">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-badge">Rekam Jejak</span>
+        <h2 class="section-title">Pengalaman &amp; <span class="highlight-text">Aktivitas</span></h2>
+        <p class="section-subtitle">
+          Pengalaman organisasi kampus, asisten laboratorium, kepanitiaan, dan pembelajaran intensif yang pernah saya ikuti.
+        </p>
+      </div>
+
+      <div class="timeline">
+        
+        <!-- Pengalaman 1: Pengurus Himpunan Mahasiswa Informatika -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Ketua Umum Himpunan Mahasiswa ( HIMA-TIF )</h3>
+              <span class="timeline-period">2026 - Sekarang</span>
+            </div>
+            <div class="timeline-org">🏛️ Himpunan Mahasiswa Teknik Informatika (HIMA-TIF) </div>
+            <p class="timeline-desc">
+              Bertanggung Jawab Penuh Atas Berjalannya atau Keberlangsungan Program Kerja Internal/Eksternal HIMA-TIF
+            </p>
+            <ul class="timeline-tasks">
+              <li>Menjalankan Dengan Baik & Maximal Program Kerja Yang Sudah di Sepakati Seluruh Anggota.</li>
+              <li>Mengevaluasi hasil Program Kerja Yang Sudah Terlaksana.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pengalaman 2: Pengurus Himpunan Mahasiswa Informatika -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Kepala Divisi / Departemen &amp; Kewirausahaan</h3>
+              <span class="timeline-period">2024 - 2025</span>
+            </div>
+            <div class="timeline-org">👥 Himpunan Mahasiswa Teknik Informatika (HIMA-TIF)</div>
+            <p class="timeline-desc">
+              Bertanggung jawab dalam pengelolaan aset Kewirausahaan Himpunan, publikasi Program Kerja Departemen
+            </p>
+            <ul class="timeline-tasks">
+              <li>Merancang desain poster, Program Kerja Pre-Order, Kaos,Lanyard,Vest,PDH & Workjacket</li>
+              <li>Berkolaborasi dengan Departemen lain untuk mendokumentasikan kegiatan organisasi.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pengalaman 3: Peserta Intensive Web Dev Bootcamp -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Ketua Karang Taruna</h3>
+              <span class="timeline-period">2021-2023</span>
+            </div>
+            <div class="timeline-org">🚀 Timeline  &amp; Kegiatan Agustusan</div>
+            <p class="timeline-desc">
+              Membuat Kepengurusan Baru Setiap Tahunnya,Rangkaian Acara hinggan mencari pendanaan dan Pelaksanaan.
+            </p>
+            <ul class="timeline-tasks">
+              <li>Melakukan perancangan kegiatan dari awal hingga kegiatan selesai.</li>
+              <li>Melakukan Evaluasi Setiap Tahunnya dan Persiapan Untuk Tahun Berikutnya.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pengalaman 4: Kepanitiaan Event  -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Panitia Inti &amp; Dies Natalies HIMA-TIF</h3>
+              <span class="timeline-period">2024</span>
+            </div>
+            <div class="timeline-org">💻 Panitia Dies Natalis / Pekan Ilmiah Mahasiswa</div>
+            <p class="timeline-desc">
+              Menjadi Bendahara Pelaksana di Event Besar HIMA-TIF
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BAGIAN 6: PORTOFOLIO PROJECT (FEATURED PROJECTS)
+       ========================================================================= -->
+  <section class="projects" id="proyek">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-badge">Showcase Karya</span>
+        <h2 class="section-title">Portofolio <span class="highlight-text">Me Project</span></h2>
+        <p class="section-subtitle">
+          Kumpulan hasil karya tugas kuliah, studi kasus perancangan, dan prototipe aplikasi yang telah saya kerjakan.
+        </p>
+      </div>
+
+      <!-- Tombol Filter Kategori Proyek -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+        <button class="filter-btn" data-filter="webapp">Aplikasi Web</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+        <button class="filter-btn" data-filter="tugas">Tugas Kuliah</button>
+      </div>
+
+      <!-- Grid Kartu Proyek -->
+      <div class="projects-grid">
+        
+        <!-- Proyek 1: Sistem Informasi Akademik -->
+        <article class="project-card" data-category="webapp">
+          <div class="project-img-wrapper">
+            <img src="assets/images/PAMFLET.png" alt="Preview Proyek Sistem Informasi Akademik" class="project-img">
+            <span class="project-tag">Web App</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Pembuatan WEB Sibidos</h3>
+            <p class="project-desc">
+              Web/Aplikasi untuk sistem bimbingan Dosen, diperuntukkan Kepada Dosen,Mahasiswa,Dan Admin Prodi
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">Figma</span>
+              <span class="tech-badge">Canva</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Vscode</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm btn-view-detail" data-project="proyek-1">
+                🔍 Detail Proyek
+              </button>
+              <a href="#proyek" class="btn btn-outline btn-sm">
+                💻 Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek 2: Toko Online E-Commerce -->
+        <article class="project-card" data-category="webapp">
+          <div class="project-img-wrapper">
+            <img src="assets/images/Produk.jpeg" alt="Preview Proyek E-Commerce ShopEasy" class="project-img">
+            <span class="project-tag">Web App</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">E-Commerce Shop Mahasiswa TIF</h3>
+            <p class="project-desc">
+              Website katalog produk Informatic Store, Produck T-Shirt,Celana,hingga Lanyard Id-Card, Lengkap dengan fitur keranjang hingga Cekout data pembeli
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">VScode</span>
+              <span class="tech-badge">Canva</span>
+              <span class="tech-badge">Local Storage</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm btn-view-detail" data-project="proyek-2">
+                🔍 Detail Proyek
+              </button>
+              <a href="#proyek" class="btn btn-outline btn-sm">
+                💻 Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek 3: UI/UX Redesign Pamflet -->
+        <article class="project-card" data-category="uiux">
+          <div class="project-img-wrapper">
+            <img src="assets/images/spiderman.jpg" alt="Preview Proyek UI/UX Redesign" class="project-img">
+            <span class="project-tag">UI/UX Design</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">UI/UX Redesign Pamflet</h3>
+            <p class="project-desc">
+              Perancangan desain antarmuka Pamflet Mentah to Pamflet Modern, 
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Figma</span>
+              <span class="tech-badge">Design System</span>
+              <span class="tech-badge">Wireframing</span>
+              <span class="tech-badge">Prototyping</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm btn-view-detail" data-project="proyek-3">
+                🔍 Detail Proyek
+              </button>
+              <a href="#proyek" class="btn btn-outline btn-sm">
+                🎨 Figma
+              </a>
+            </div>
+          </div>
+        </article>
+
+        </section>
+
+  <!-- =========================================================================
+       BAGIAN 7: RIWAYAT PENDIDIKAN & SERTIFIKASI
+       ========================================================================= -->
+  <section class="education-section" id="pendidikan">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-badge">Jalur Akademik</span>
+        <h2 class="section-title">Pendidikan &amp; <span class="highlight-text">Sertifikasi</span></h2>
+        <p class="section-subtitle">
+          Latar belakang pendidikan formal serta pelatihan kompetensi yang telah saya tempuh.
+        </p>
+      </div>
+
+      <div class="edu-grid">
+        
+        <!-- Kolom Kiri: Pendidikan Formal -->
+        <div class="edu-column">
+          <h3 class="edu-column-title">
+            <span>🎓</span> Riwayat Pendidikan Formal
+          </h3>
+
+          <div class="edu-card">
+            <span class="edu-year">2024 - Sekarang (Aktif)</span>
+            <h4 class="edu-school">Universitas PGRI RONGGOLAWE TUBAN</h4>
+            <div class="edu-major">S1 - Teknik Informatika</div>
+            <p class="edu-note">
+              Fokus mendalami Rekayasa Perangkat Lunak, Pemrograman Web Berbasis Komponen, Struktur Data, dan Perancangan Basis Data Relasional.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <span class="edu-year">2018 - 2022</span>
+            <h4 class="edu-school">SMK Manbail Futuh Jenu</h4>
+            <div class="edu-major">Jurusan Teknik Komputer & Jaringan (TKJ) </div>
+            <p class="edu-note">
+              Lulus dengan prestasi baik dan aktif dalam kegiatan ekstrakurikuler Olahraga.
+            </p>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Sertifikat & Pelatihan -->
+        <div class="edu-column">
+          <h3 class="edu-column-title">
+            <span>📜</span> Seminar &amp; Sertifikat
+          </h3>
+
+          <div class="edu-card">
+            <span class="edu-year">Tahun 2026</span>
+            <h4 class="edu-school">Sertifikat Workshop in PT.MCI</h4>
+            <div class="edu-major">Workshop & Kunjungan Belajar Langsung</div>
+            <p class="edu-note">
+              Mengetahui Cara Membuat,Branding,Proses Pembuatan Hingga Proses Siap jual IMPORT/EKSPORT berstandar industri.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <span class="edu-year">Tahun 2026</span>
+            <h4 class="edu-school">Volunteer Konser</h4>
+            <div class="edu-major"> Volunteer Konser Cerita Nada &amp; Public Relations</div>
+            <p class="edu-note">
+              Menjadi Volunteer Konser Cerita Nada, mendapatkan posisi sebagai Public Relation
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BAGIAN 8: KONTAK SAYA
+       ========================================================================= -->
+  <section class="contact" id="kontak">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-badge">Hubungi Saya</span>
+        <h2 class="section-title">Kirim Pesan &amp; <span class="highlight-text">Kontak</span></h2>
+        <p class="section-subtitle">
+          Bapak/Ibu Dosen atau rekan mahasiswa dapat menghubungi saya melalui formulir di bawah ini atau melalui kontak langsung.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Info Kontak Langsung -->
+        <div class="contact-info">
+          <h3>Mari Berdiskusi &amp; Terhubung</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">
+            Saya siap menerima saran, masukan penilaian tugas UTS, atau peluang kolaborasi dalam proyek Coding selanjutnya.
+          </p>
+
+          <div class="contact-info-list">
+            
+            <!-- Email -->
+            <div class="contact-info-card">
+              <div class="contact-icon">📧</div>
+              <div class="contact-details">
+                <h5>Email Resmi</h5>
+                <p>Mbrauwchannel@Gmail.com</p>
+              </div>
+            </div>
+
+            <!-- WhatsApp / Telepon -->
+            <div class="contact-info-card">
+              <div class="contact-icon">📱</div>
+              <div class="contact-details">
+                <h5>WhatsApp / Telepon</h5>
+                <p>+62 857 8014 4365</p>
+              </div>
+            </div>
+
+            <!-- Alamat Kampus / Domisili -->
+            <div class="contact-info-card">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <h5>Lokasi / Domisili</h5>
+                <p>Ds.Jenu, Kab.Tuban , Indonesia</p>
+              </div>
+            </div>
+
+            <!-- Jam Aktif -->
+            <div class="contact-info-card">
+              <div class="contact-icon">⏰</div>
+              <div class="contact-details">
+                <h5>Jam Aktif Kuliah</h5>
+                <p>Senin - Jumat, 08.00 - 21.00 WIB</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Formulir Kontak Interaktif -->
+        <div class="contact-form-card">
+          <form id="contact-form">
+            
+            <div class="form-group">
+              <label for="form-name" class="form-label">Nama Lengkap Anda *</label>
+              <input type="text" id="form-name" class="form-control" placeholder="Contoh: Bapak Dosen / Rekan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Alamat Email *</label>
+              <input type="email" id="form-email" class="form-control" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" class="form-label">Subjek Pesan</label>
+              <input type="text" id="form-subject" class="form-control" placeholder="Contoh: Masukan Penilaian UTS Portofolio">
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Isi Pesan / Feedback *</label>
+              <textarea id="form-message" class="form-control" rows="5" placeholder="Tuliskan pesan, evaluasi nilai UTS, atau tawaran kolaborasi di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>✉️</span> Kirim Pesan Sekarang
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BAGIAN 9: FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>&lt;/&gt; Andrian.dev</h3>
+          <p>
+            Website portofolio pribadi yang dibuat sebagai pemenuhan nilai Ujian Tengah Semester (UTS) mata kuliah Multimedia. Dibuat secara mandiri menggunakan HTML5, CSS3, dan JavaScript di Visual Studio Code.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#pengalaman">Pengalaman</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Akademik &amp; UTS</h4>
+          <ul>
+            <li><a href="#proyek">Portofolio Proyek</a></li>
+            <li><a href="#pendidikan">Riwayat Pendidikan</a></li>
+            <li><a href="#kontak">Hubungi Mahasiswa</a></li>
+            <li><a href="#" id="footer-btn-cv">Cetak Lembar Portofolio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year">2026</span> <strong>Andrian</strong>. Hak Cipta Dilindungi Undang-Undang. Dibuat dengan <span>❤️</span> untuk Tugas UTS Pemrograman Web di VS Code.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       BAGIAN 10: MODAL POPUP DETAIL PROYEK
+       ========================================================================= -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close" aria-label="Tutup Jendela Detail">&times;</button>
+      <div class="section-badge" id="modal-category" style="margin-bottom: 0.5rem;">Kategori Proyek</div>
+      <h3 id="modal-title" style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">Judul Proyek</h3>
+      <p id="modal-desc" style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;">Deskripsi lengkap...</p>
+      
+      <h5 style="margin-bottom: 0.5rem; font-size: 0.95rem;">Teknologi yang Digunakan:</h5>
+      <div id="modal-tech" class="project-tech" style="margin-bottom: 1.5rem;"></div>
+
+      <div style="display: flex; gap: 0.75rem;">
+        <a href="#proyek" class="btn btn-primary btn-sm" id="modal-link">Buka Halaman Live</a>
+        <a href="https://github.com" target="_blank" class="btn btn-outline btn-sm">Lihat Source Code di GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tombol Melayang Kembali Ke Atas (Scroll to Top) -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Kembali ke atas">
+    ▲
+  </button>
+
+  <!-- Skrip JavaScript Utama -->
+  <script src="js/script.js"></script>
+</body>
+</html>
